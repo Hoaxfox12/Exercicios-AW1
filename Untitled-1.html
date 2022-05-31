@@ -1,0 +1,102 @@
+<!<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>Cadastro</title>
+</head>
+<body>
+    <fieldset>
+        <h2>Identificação do Usuário</h2>
+        <p> <label>Nome: <input type="text" name="name" required/> </label></p>  
+         <br>
+         <p><label>Senha: <input type="text" name="password" required/> </label></p>
+         <br>
+         <p><label>CPF: <input type="text" name="cpf" required/> </label></p>
+         <br>
+         <p>Qual é o seu sexo</p>
+         <select name="sexo">
+            <option value="feminino">Feminino</option>
+            <option value="masculino">Masculino</option>
+            <br>
+    </select>
+         <p><label for="estado_civil">Qual é o seu estado civil?</label></p>
+         <select name="Estado Civil" id="estado_civil">
+        <optgroup>
+            <option value="solteiro">Solteiro(a)</option>
+            <option value="casado">Casado(a)</option>
+            <option value="divorciado">Divorciado(a)</option>
+            <option value="viuvo">Viúvo(a)</option>
+            <option value="estavel">Relação Estável</option>
+            <option value="ninfo">Não Informado</option>
+        </optgroup>
+    </select>
+</select>
+<p><label for="escolaridade">Qual é o seu nível de escolaridade?</label></p>
+<select name="escolaridade" id="escolaridade">
+<optgroup>
+   <option value="analfabeto">Analfabeto</option>
+   <option value="ensinofun">Ensino Fundamental</option>
+   <option value="ensinome">Ensino Medio</option>
+   <option value="ensinosup">Ensino Superior</option>
+   <option value="posdout">Doutorado/Pós Graduação</option>
+   <option value="ninfo_esco">Não Informado</option>
+</optgroup>
+Status de escolaridade:
+<input type="radio" id="completo_esc"name="incompleto" value="Completo_lab" re>
+<label for="completo">Completo</label>
+<input type="radio" id="incompleto_esc" name="incompleto" value="Incompleto_lab">
+<label for="Incompleto">Incompleto</label>
+</select>
+<p> Qual a sua profissão principal </p>
+<label>Profissão: <input type="text" name="profis"/> </label>
+<br>
+<p> Qual a sua renda mensal bruta </p>
+<label>Renda Mensal: <input type="number" name="income"> </label>
+<br>
+<p> Quantos dependentes há em sua residencia?</p>
+<label>Profissão: <input type="text" name="depen"> </label>
+<br>
+<p> Telefone para contato (celular ou fixo)</p>
+<label>Telefone: <input type="tel" name="phone"> </label>
+<br>
+<p>Insira o seu Email</p>
+<label>Email: <input type="email" name="email"> </label>
+<br>
+    </fieldset>
+
+
+    <fieldset>
+        <h2>Localização</h2>
+        <p> Insira o estado onde reside</p>
+        <label>Estado: <input type="state" name="br_state"> </label>
+        <br>
+        <p> Insira a cidade onde reside</p>
+        <label>Cidade: <input type="city" name="br_city"> </label>
+        <br>
+    </fieldset>
+
+    <fieldset>
+
+    <h2>Mensagem do Usuário</h2>
+
+    <p><label for="urgencia">Qual é o seu nível de urgência?</label></p>
+    <select name="urgencia" id="urgencia">
+    <optgroup>
+    <option value="low">Baixo nível de urgência</option>
+    <option value="medium">Nivel moderado de urgência</option>
+    <option value="high">Alto nível de urgência (Emergência)</option>
+    </optgroup>
+    </select>
+    <p>Insira sua mensagem</p>
+    <label>Mensagem: <input type="menssage" name="menssage"> </label>
+    <br>
+         <form action="test2" method="post">
+         <p>Reportar Erro:</p>
+        <input type="submit" value="Upload" />
+        </form>
+    </fieldset>
+
+    <button>Salvar</button> <button>Limpar</button>
+
+</body>
+</html>
