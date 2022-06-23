@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+      <form action="">
+                <fieldset>
+                <h1>Pesquisa de Opinião</h1>
+                 <label for="user">Nome do usuário:</label>
+                <input type="text" name="user" size="15" maxlength="30" />
+                
+                <p>Senha:
+                <input type="password" name="password" size="15" maxlength="30" />
+                </p>    
+                <p>Deixe seu comentário sobre o campeonato brasileiro</p>
+                <textarea name="comments" cols="20" rows="4">Entre com seu
+                comentário...</textarea>
+                 
+                     <p>Diga quantas vezes o seu time já ganhou o campeonato:
+                    <br>
+                    <input type="radio" name="titulo8" value="lider" checked="checked" /> 7 vezes ou mais
+                    <input type="radio" name="titulo5" value="mid" /> 6 vezes ou menos
+                    <input type="radio" name="titulo3" value="bad" /> Menos de 5 ou nunca
+                    </p>
+                    <p>O time que você torce é:
+                    <br>
+                    <input type="checkbox" name="tm1" value="primeiro" checked="checked" /> Primeiro time
+                    <input type="checkbox" name="tm2" value="segundo" /> Segundo time
+                    <input type="checkbox" name="tmr" value="terceiro" /> Time regional
+                    </p>
+                    <p>Em qual dispositivo você acompanha o campeonato?</p>
+                    <select name="devices">
+                    <option value="tv">Tv</option>
+                    <option value="radio">Radio</option>
+                    <option value="computer">Computador</option>
+                    <option value="cellphone">Celular</option>
+                    <option value="none">Não Acompanha</option>
+                    </select>
+               
+                    <h2>Insira informações adicionais</h2>
+                <p>
+
+                    <label for="username">Data da resposta do questionário</label>
+                    <input type="date" name="dataen" />
+                   
+                </p>
+          
+                <p>
+                    <label for="email-user">Insira o seu email</label>
+                    <input type="email" name="email-user" />
+                    
+                </p>
+                <p>
+                    <label for="username">Diga qual é o seu time</label>
+                    <input type="text" name="team" />
+                </p>
+
+                <p>
+                    <input type="submit" name="send" />
+                </p>
+            </fieldset>
+
+      </form>
+    </body>
+</html>
