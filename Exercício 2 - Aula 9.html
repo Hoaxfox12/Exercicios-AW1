@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Fatorial de um número</title>
+</head>
+<body>
+<h1> Fatorial de um número usando JavaScript </h1>
+<h2> Insira um número válido </h2>
+<input type = "number" min = "1" id = "num">
+<button type = "button" onclick = "enviar()" > Enviar </button>
+<h3> Factorial: 
+	<span id = "resposta"> 
+
+	</span> 
+</h3>
+<script>
+
+function enviar()
+{
+var num = parseInt( document.getElementById("num").value);
+if( isNaN(num) )
+{
+alert( " Insira um número válido " );
+return;
+}
+document.getElementById("resposta").innerHTML = num;
+}
+</script>
+</body>
+</html>

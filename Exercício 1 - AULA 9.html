@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <div class="container">
+        <input type="text" name="numero1" id="numero1"> <br>
+        
+        <input type="text" name="numero2" id="numero2"><br>
+        <button type="button" onclick="soma()">Enviar</button><br>
+
+        <p id="resultado"></p>
+    </div>
+    
+    <script>
+        function soma(){
+            var a =  document.getElementById("numero1").value;
+            var b =  document.getElementById("numero2").value;
+            var c = parseInt(a) + parseInt(b); 
+
+            document.getElementById("resultado").innerHTML="SOMA DOS NÚMEROS É IGUAL A:" + c;
+        }
+    </script>
+
+</body>
+</html>
